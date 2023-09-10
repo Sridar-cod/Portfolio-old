@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+  body{
+   background-color:rgb(134, 135, 134);
+/* background-color: transparent;  */
+}
+
+body img{
+  position: absolute;
+  right: 10em;
+  top:8em;
+  width: 350px;
+  height: 500px;
+  background:transparent;
+  opacity: .4;
+  /* border: 3px solid white; */
+  border-radius: 50px;
+  box-shadow: 20px -20px 9px -3px rgb(178, 178, 178);
+  animation-name: photo;
+  animation-duration: 3s;
+  transition: 3s;
+}
+@keyframes photo{
+0%{
+  opacity: -1;
+  width: 2px;
+  box-shadow: 1px 1px 1px 1px rgb(225, 225, 225);
+}
+}
+nav{
+  background-color: rgb(187, 180, 180);
+  width: 100%;
+  border: none;
+  height: 2.5rem;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  background: transparent;
+  animation-name: head;
+  animation-duration: 3s;
+}
+nav button{
+  background: transparent;
+}
+@keyframes head{0%{transform: translatey(-100%)};
+}
+#button{
+  border: none;
+}
+li i{
+  font-size: 20px;
+  color: aliceblue;
+  cursor: pointer;
+}
+#button :hover{
+  transition: 0.6s;
+  color: blueviolet;
+}
+#span{
+  display: none;
+  color: blueviolet;
+  margin-left: 5%;
+  font-style: italic;
+  font-size: 15px;
+}
+nav li a{
+  font-size: 20px;
+  color: rgb(255, 255, 255)
+
+}
+nav li a :hover{
+  transition: 0.6s;
+  color: blueviolet;
+}
+                   /* header */
+.header{
+  min-height: 5em;
+  color: rgb(52, 87, 122);
+  margin-top: 8em;
+  margin-left: 5em;
+  font-family: cursive;
+  padding: 2em;
+  animation: header 4s ease-in-out;
+}
+@keyframes header {
+  0%{
+    opacity: .1;
+  }
+  
+}
+.header span h4{
+  font-family: cursive;
+  font-weight: lighter;
+  font-size: .3em;
+  color: blueviolet;
+  }
+  .header h1{
+    font-size: 6em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: rgba(229, 229, 255, 0.657);
+  }
+  .header h1 span{
+    color: blueviolet;
+  }
+  .header h2{
+    color: blueviolet;
+    font-weight:lighter;
+  }
+  .header p{
+    font-size:15px ;
+    margin-top: 5px;
+  }
+                    /* footer */
+  .button a{
+    background-color: aliceblue;
+    margin-left: 30em;
+    background: transparent;
+    padding: 4px;
+    border: 2px solid rgb(169, 169, 169);
+    color: aliceblue;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    animation: header 4s ease-in-out;
+    transition: 1s;
+  }
+  .button :hover{
+    transition: .5s ease-in-out;
+    color: blueviolet;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+    
+    }
+
+    @media screen  and (max-width:576px){
+      .header{
+        margin-left: 1em;
+        margin-top: 15em;
+      }
+      .header h1 {
+        font-size: 1em;
+      }
+      .button a{
+        position: relative;
+        top: 1em;
+        margin-left: 8em;
+      }
+      body img{
+        width: 20px;
+        height: 200px;
+        position: absolute;
+        right: 3em;
+        top:5em;
+      }
+    }
+
+    /* @media screen  and (max-width:480px){
+      .button a{
+        margin-left: 3.4em;
+        font-size: smaller;
+      }
+      .header h1{
+        font-size: 2px;
+        letter-spacing:0px;
+        margin-top: 1px;
+      }
+      body img{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 3em;
+        top:5em;
+      }
+    } */
+    /* @media screen  and (max-width:580px){
+      body img{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        right: 3em;
+        top:5em;
+      }
+    } */
+    @media screen  and (max-width:1200px){
+      body img{
+        width: 300px;
+        height: 350px;
+        position: absolute;
+        right: 3em;
+        top:5em;
+      }
+      .header h1{
+        font-size: 4em;
+        letter-spacing:1px;
+        margin-top: 2em;
+      }
+    }
